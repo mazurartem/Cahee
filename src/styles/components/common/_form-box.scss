@@ -2,30 +2,40 @@
   &__input {
     height: 50px;
     width: 500px;
-    background-color: $about-bg-color;
+    background-color: $input-bg;
     border: none;
     padding-left: 20px;
     outline: none;
+    border-left: 5px solid transparent;
+    opacity: 0.5;
+    @include text($H50, 700);
+    transition: all 1s;
   }
   &__input::placeholder {
     color: #ffffff;
   }
   &__input:active {
     color: #ffffff;
-    border-left: 5px solid #355b82;
+    border-left: 5px solid $input-focus-border;
   }
   &__input:focus {
-    border-left: 5px solid #355b82;
+    border-left: 5px solid $input-focus-border;
+    background-color: $input-focus-bg;
+    opacity: 1;
   }
   &__input--big {
     height: 250px;
     width: 500px;
-    background-color: $about-bg-color;
+    background-color: $input-bg;
     border: none;
+    border-left: 5px solid transparent;
     margin-bottom: 120px;
     outline: none;
     padding-left: 20px;
     padding-bottom: 200px;
+    opacity: 0.5;
+    @include text($H50, 700);
+    transition: all 1s;
   }
   &__input--big::placeholder {
     color: #ffffff;
@@ -34,7 +44,9 @@
     color: #ffffff;
   }
   &__input--big:focus {
-    border-left: 5px solid #355b82;
+    border-left: 5px solid $input-focus-border;
+    background-color: $input-focus-bg;
+    opacity: 1;
   }
 }
 
