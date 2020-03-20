@@ -1,0 +1,27 @@
+.section-subscribe {
+  background-image: url(../images/bg-subscribe.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  @extend %image-absolute;
+  &__container {
+    padding-top: 145px;
+    padding-bottom: 163px;
+  }
+  &__title {
+    @include text($H700, 700, $text-main-color);
+    margin-bottom: 34px;
+  }
+  &__text {
+    max-width: 550px;
+    margin-bottom: 31px;
+  }
+  &__form {
+    @include flex();
+  }
+  &__input {
+    color: $text-marked-color;
+    width: 570px;
+    height: 55px;
+  }
+}
