@@ -27,4 +27,16 @@
     flex-grow: 1;
     padding-left: 150px;
   }
+  &__button {
+    width: 100%;
+    margin-bottom: 120px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  &__form {
+    &:valid + * {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 }

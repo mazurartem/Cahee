@@ -1,4 +1,4 @@
-<section class="section-contact">
+<section id="contact" class="section-contact">
   <div class="container">
     <div class="section-contact__text">
       <h1 class="section-contact__title">Contact</h1>
@@ -7,24 +7,25 @@
     </div>
     <div class="section-contact__main">
 
-      <div class="section-contact__form">
-        <form action=""></form>
-        <div class="form-box">
-          <input class="form-box__input" name="Auskteez Tran" placeholder="Auskteez Tran" minlength="2" type="text"
-            required>
-        </div>
-        <div class="form-box">
-          <input class="form-box__input" name="Your email..." placeholder="Your email..." type="mail" required>
-        </div>
-        <div class="form-box">
-          <input class="form-box__input" name="Your phone number..." placeholder="Your phone number..." minlength="9"
-            type="tel" required>
-        </div>
-        <div class="form-box">
-          <input class="form-box__input--big" name="Your message..." placeholder="Your message..." type="text required">
-        </div>
+      <div class="section-contact__form-wrapper">
+        <form class="section-contact__form" name="form" id="form" action="/">
+          <div class="form-box">
+            <input class="form-box__input" name="Auskteez Tran" placeholder="Auskteez Tran" minlength="2" type="text"
+              required>
+          </div>
+          <div class="form-box">
+            <input class="form-box__input" name="Your email..." placeholder="Your email..." type="email" required>
+          </div>
+          <div class="form-box">
+            <input class="form-box__input" name="Your phone number..." placeholder="Your phone number..." minlength="9"
+              type="tel" required>
+          </div>
+          <div class="form-box">
+            <input class="form-box__input--big" name="Your message..." placeholder="Your message..." minlength="20"
+              type="text" required>
+          </div>
         </form>
-        <button class="button">SEND</button>
+        <button form="form" type="submit" class="button section-contact__button button--contact">SEND</button>
       </div>
       <div class="section-contact__info">
 
@@ -44,13 +45,3 @@
     </div>
   </div>
 </section>
-<footer class="footer">
-  <div class="container">
-    <ul class="footer-list">
-      <li class="footer-list__item--copy">© 2015 Company. All right reserved.</li>
-      <li class="footer-list__item--logo">Cahee</li>
-      <li class="footer-list__item--author">Made with <span class="love">love</span> by Auskteez</li>
-    </ul>
-  </div>
-
-</footer>

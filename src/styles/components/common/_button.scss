@@ -6,6 +6,7 @@
   @include text($H300, 300, $white);
   background-color: $header-btn-color;
   text-transform: uppercase;
+  cursor: pointer;
   @include flex(center, center);
   width: 100%;
   text-align: center;
@@ -26,5 +27,8 @@
   }
   &--blog {
     background-color: $blog-btn-color;
+  }
+  &--contact {
+    background-color: $contact-btn-color;
   }
 }
