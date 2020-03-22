@@ -4,14 +4,21 @@
   background-position: center center;
   position: relative;
   min-height: 90px;
-  padding-top: 37px;
+  padding-top: 15px;
+
+  @media screen and (min-width: $screen-tablet) {
+    padding-top: 37px;
+  }
+
   &__list {
     @include flex(space-around, stretch);
     list-style-type: none;
   }
 }
 .footer-list {
-  @include flex(space-between);
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
   list-style-type: none;
 
   @extend %container;
@@ -20,9 +27,17 @@
   }
   &__item--logo {
     @include text($H500, 400, $grey);
+    order: 1;
+    @media screen and (min-width: $screen-tablet) {
+      order: 0;
+    }
   }
   &__item--author {
     @include text($H50, 400, $grey);
+  }
+  @media screen and (min-width: $screen-tablet) {
+    @include flex(space-between);
+    list-style-type: none;
   }
 }
 .love {
