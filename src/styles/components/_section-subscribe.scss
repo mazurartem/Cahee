@@ -17,11 +17,14 @@
     margin-bottom: 31px;
   }
   &__form {
-    @include flex();
+    @include flex(space-between);
   }
   &__input {
     color: $text-marked-color;
     width: 570px;
     height: 55px;
+  }
+  &__button {
+    margin-right: 400px;
   }
 }
