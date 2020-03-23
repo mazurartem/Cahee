@@ -1,10 +1,19 @@
 .card {
   height: 310px;
-  min-width: 300px;
+  min-width: 400px;
   position: relative;
   display: flex;
   align-items: flex-end;
   box-shadow: $blog-btn-color;
+  @media screen and (min-width: $screen-tablet) {
+    height: 310px;
+    min-width: 200px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: $blog-btn-color;
+  }
+
   &__image {
     position: absolute;
     top: 0;
@@ -30,7 +39,7 @@
     @extend %visible-z;
     padding: 20px;
     background: $content-gradient;
-    min-width: 300px;
+    min-width: 100%;
   }
   &__title {
     @include text($H200, 700, $white);

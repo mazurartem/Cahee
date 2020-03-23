@@ -34,7 +34,8 @@
     @include flex(space-between, stretch, column-reverse);
     text-align: center;
     @media screen and (min-width: $screen-tablet) {
-      @include flex(space-between, stretch, column);
+      @include flex(space-between, stretch, row);
+      text-align: left;
     }
   }
   &__info {

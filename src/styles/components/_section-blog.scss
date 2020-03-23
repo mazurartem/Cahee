@@ -1,44 +1,76 @@
 .section-blog {
   background-color: $blog-bg-color;
-  padding-top: 100px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (min-width: $screen-tablet) {
+    padding-top: 100px;
+  }
 
   &__title {
     text-align: center;
     @include text($H900, 700, $white);
-    margin-bottom: 42px;
+    margin-bottom: 25px;
     line-height: 0.75;
+    @media screen and (min-width: $screen-tablet) {
+      text-align: center;
+      @include text($H900, 700, $white);
+      margin-bottom: 42px;
+      line-height: 0.75;
+    }
   }
   &__description {
     @include text($H200, 300, $white);
     line-height: 1.5;
     max-width: 570px;
     text-align: center;
-
     margin: 0 auto;
     margin-bottom: 50px;
   }
   &__list {
-    margin-bottom: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    @extend %container;
+    margin: 0 auto;
+    max-width: $max-width;
+    @media screen and (min-width: $screen-tablet) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      margin: 0 auto;
+      max-width: $max-width;
+    }
   }
   &__list-item {
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-bottom: 20px;
     }
     &:hover {
       box-shadow: $blog-btn-color;
       cursor: pointer;
+    }
+
+    @media screen and (min-width: $screen-tablet) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      &:hover {
+        box-shadow: $blog-btn-color;
+        cursor: pointer;
+      }
     }
   }
   &__button {
     @extend %center;
   }
   .button-box {
-    margin-bottom: 120px;
+    padding-top: 25px;
+    margin-bottom: 50px;
+    @media screen and (min-width: $screen-tablet) {
+      padding-top: 25px;
+      margin-bottom: 120px;
+    }
   }
 }
