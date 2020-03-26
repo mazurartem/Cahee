@@ -31,7 +31,6 @@
   &__list {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     margin: 0 auto;
     max-width: $max-width;
     @media screen and (min-width: $screen-tablet) {
@@ -61,7 +60,9 @@
     }
   }
   &__button {
-    @extend %center;
+    @media screen and (min-width: $screen-tablet) {
+      margin: 0 auto;
+    }
   }
   .button-box {
     padding-top: 25px;
