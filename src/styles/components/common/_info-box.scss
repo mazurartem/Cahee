@@ -1,6 +1,6 @@
 .info-box {
   &__uppercase-text {
-    @include text($H200, 400, $text-main-color);
+    @include text($H200, 700, $text-main-color);
   }
   &__text {
     @include text($H300, 400, $text-main-color);

@@ -20,7 +20,7 @@
   @media screen and (min-width: $screen-tablet) {
     &__input {
       height: 50px;
-      width: 500px;
+      max-width: 500px;
       background-color: $input-bg;
       border: none;
       padding-left: 20px;

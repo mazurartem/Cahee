@@ -34,15 +34,18 @@
     @include flex(space-between, stretch, column-reverse);
     text-align: center;
     @media screen and (min-width: $screen-tablet) {
-      @include flex(space-between, stretch, row);
+      @include flex(space-between, stretch, column-reverse);
+      text-align: center;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      @include flex(flex-start, stretch, row);
       text-align: left;
     }
   }
   &__info {
     padding-bottom: 50px;
-    @media screen and (min-width: $screen-tablet) {
-      flex-grow: 1;
-      padding-left: 12.2%;
+    @media screen and (min-width: $screen-desktop) {
+      padding-left: 170px;
     }
   }
   &__button {
